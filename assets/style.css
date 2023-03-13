@@ -59,7 +59,11 @@ h3 {
   margin-bottom: 3%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
+}
+.card-content:hover,
+.card-content:hover .card-header {
+  box-shadow: inset 0px 0px 8px var(--purple), 0 0 15px var(--purple);
 }
 
 .card-header {
@@ -69,6 +73,7 @@ h3 {
   border-radius: 5px;
   text-align: center;
   background-color: var(--background);
+  transition: all 0.5s ease-in-out;
 }
 
 .code-block {
@@ -80,19 +85,24 @@ h3 {
   border-radius: 8px;
   color: var(--lightgray);
   white-space: pre-wrap;
-  flex: 1 0 65%;
+  flex: 1 0 60%;
   overflow: auto;
-  justify-content: baseline;
   max-height: 65%;
 }
 
 .code-block code {
   line-height: 1.5rem;
   font-family: monospace, "Times New Roman", Times, serif;
+  align-content: center;
+}
+
+.code-block code:active {
+  user-select: all;
 }
 .footer {
   color: var(--purple);
   text-align: center;
+  padding-bottom: 30px;
 }
 
 @media screen and (max-width: 768px) {
