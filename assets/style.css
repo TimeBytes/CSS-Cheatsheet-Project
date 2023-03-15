@@ -50,7 +50,7 @@ h3 {
 }
 
 .card-content {
-  flex: 0 0 30%;
+  flex: 1 0 30%;
   max-width: 33%;
   outline: var(--lightgray) dashed 2px;
   outline-offset: -5px;
